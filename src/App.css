@@ -1,0 +1,169 @@
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.header p {
+  margin: 0.2rem 0 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.stack {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.fieldLabel {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+select,
+input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 0.65rem;
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+.categoryTabs {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding-bottom: 0.1rem;
+}
+
+.pill {
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #fff;
+  color: #111827;
+  padding: 0.4rem 0.7rem;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.pill.active {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #fff;
+}
+
+.stateCard {
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 0.9rem;
+  background: #f8fafc;
+}
+
+.stateCard.error {
+  border-style: solid;
+  border-color: #fca5a5;
+  background: #fef2f2;
+}
+
+.menuList {
+  display: grid;
+  gap: 1rem;
+}
+
+.categoryBlock {
+  display: grid;
+  gap: 0.65rem;
+  scroll-margin-top: 0.5rem;
+}
+
+.categoryBlock h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.menuCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  min-height: 96px;
+  background: #fff;
+}
+
+.menuImageWrap {
+  width: 96px;
+  height: 100%;
+}
+
+.menuImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menuImagePlaceholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  color: #6b7280;
+  background: linear-gradient(135deg, #eef2ff, #e5e7eb);
+}
+
+.menuContent {
+  padding: 0.65rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.menuContent h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.description {
+  margin: 0;
+  color: #374151;
+  font-size: 0.87rem;
+}
+
+.textButton {
+  border: 0;
+  background: transparent;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.price {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.82rem;
+}
+
+.variationLine {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.82rem;
+}
+
+@media (min-width: 640px) {
+  .menuCard {
+    grid-template-columns: 120px 1fr;
+    min-height: 120px;
+  }
+
+  .menuImageWrap {
+    width: 120px;
+  }
+}
