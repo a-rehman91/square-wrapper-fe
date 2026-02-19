@@ -10,15 +10,9 @@ React + TypeScript mobile-first SPA for viewing Square menu data via backend pro
 
 ## Environment
 
-Copy `.env.example` to `.env`:
+Use `.env` to set values:
 
 - `VITE_API_BASE_URL=http://localhost:4000`
-
-## Secrets Handling
-
-- Never place `SQUARE_ACCESS_TOKEN` in frontend code or frontend env.
-- Frontend should only call backend API (`VITE_API_BASE_URL`).
-- Square credentials are managed exclusively by `square-wrapper-be`.
 
 ## Run
 
