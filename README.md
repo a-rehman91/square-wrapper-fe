@@ -33,6 +33,15 @@ npm run dev
 npm run build
 ```
 
+## Docker
+
+Build and run frontend container:
+
+```bash
+docker build -t square-wrapper-fe .
+docker run --rm -p 5173:80 square-wrapper-fe
+```
+
 ## Testing
 
 - Unit tests: menu filtering/formatting helpers
